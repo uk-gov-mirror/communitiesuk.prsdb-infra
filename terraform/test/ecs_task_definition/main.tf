@@ -32,6 +32,18 @@ locals {
       value = local.environment_name
     },
     {
+      name  = "ARGON2_ITERATIONS"
+      value = "2"
+    },
+    {
+      name  = "ARGON2_MEMORY"
+      value = "16384"
+    },
+    {
+      name  = "ARGON2_PARALLELISM"
+      value = "1"
+    },
+    {
       name  = "RDS_URL"
       value = "jdbc:postgresql://${data.aws_ssm_parameter.database_url.value}"
     },
