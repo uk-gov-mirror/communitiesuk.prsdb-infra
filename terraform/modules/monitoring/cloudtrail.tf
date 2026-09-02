@@ -28,7 +28,7 @@ resource "aws_cloudtrail" "main" {
         equals = ["Data"]
       }
       field_selector {
-        field  = "resource.type"
+        field  = "resources.type"
         equals = ["AWS::KMS::Key"]
       }
     }
