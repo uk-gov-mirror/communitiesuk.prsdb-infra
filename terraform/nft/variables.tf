@@ -24,7 +24,7 @@ variable "non_critical_alarm_email_address" {
 
 variable "enable_kms_cloudtrail_events" {
   type        = bool
-  description = "Whether to log KMS cryptographic operation events to CloudTrail"
+  description = "Whether to log KMS  events to CloudTrail"
   default     = false
 }
 

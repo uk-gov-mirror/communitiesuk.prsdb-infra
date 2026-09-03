@@ -27,8 +27,9 @@ variable "maintenance_mode_on" {
   description = "Indicates whether maintenance mode is on"
   default     = false
 }
+
 variable "enable_kms_cloudtrail_events" {
   type        = bool
-  description = "Whether to log KMS cryptographic operation events to CloudTrail"
+  description = "Whether to log KMS  events to CloudTrail"
   default     = true
 }
